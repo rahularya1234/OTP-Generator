@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>otpgenerate</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <form class="formm">
+            
+
+            <h1>OTP GENERATE</h1>
+            <label for="phoneNumber">Enter Phone Number:</label><br />
+            <input type="tel" id="phoneNumber" placeholder="Enter your mobile number" required/>
+            <br />
+            <button class="sendButton" onclick="generateOTP()">SEND</button>
+            <div id="resendTimer">
+                
+            </div>
+
+            <div id="otpDisplay"></div> 
+            <div class="visiable">
+            <input type="text" class="input" id="enteredOTP" placeholder="Enter OTP" style="display: none;"/>
+            <button class="btn" id="bbtn" style="display: none;"  onclick="verifyOTP()">submit </button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
