@@ -11,6 +11,7 @@ form.addEventListener('submit', function(e) {
         OTP += digits[Math.floor(Math.random() * 10)];
     }
     document.getElementById("otpDisplay").innerHTML = "Generated OTP: " + OTP;
+    document.getElementById("sendBtn").style.display = "none";
     document.getElementById("enteredOTP").style.display = "block";
     document.getElementById("bbtn").style.display = "block";
     startResendTimer();
